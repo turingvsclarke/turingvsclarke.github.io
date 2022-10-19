@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link absolute="stylesheet" href="style.css">
+        <title>Vid carousel</title>
+    </head>
+    
+    <body>
+        <section>
+            <iframe id="slider" width="620" height="415" src="https://www.youtube.com/embed/NZNCrHsHY30"></iframe>
+            <ul class="navigation">
+                <li onclick="videoUrl('https://www.youtube.com/embed/jV4n0X4mc-o')"><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2Fu7S2I.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F34061173%2Fclick-on-first-onclick-function-inside-tag-by-class-selected&tbnid=d3o2ohgPmafBcM&vet=12ahUKEwjSy-TGke36AhWOxykDHf8LDsAQMygCegUIARDtAQ..i&docid=D2GNs6exihuueM&w=670&h=226&q=image%20onclick&ved=2ahUKEwjSy-TGke36AhWOxykDHf8LDsAQMygCegUIARDtAQ"></li>
+                <li onclick="videoUrl('')">
+                    <img src="thumb1.jpg"></li>
+                <li onclick><img src="thumb1.jpg"></li>
+                <li><img src="thumb1.jpg"></li>
+                <li><img src="thumb1.jpg"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function videoUrl(vid){
+                document.getElementById("slider").src=vid;
+            }
+        </script>
+    </body>
+</html>
